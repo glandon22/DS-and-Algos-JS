@@ -39,7 +39,6 @@ class BST {
             return this;
         }
 
-        let inserted = false;
         let start = this.root;
         while (true) {
             if (val > start.value) {
@@ -174,13 +173,87 @@ class BST {
         helper(current);
         return visited;
     }
+
+    preOrder2() {
+        function helper(node) {
+            visitedVals.push(node.value);
+
+            if (node.left) {
+                helper(node.left);
+            }
+
+            if (node.right) helper(node.right);
+
+        }
+
+        if (!this.root) return null;
+
+        let visitedVals = [];
+        let current = this.root;
+        helper(current);
+        return visitedVals;
+    }
+
+    inOrder2() {
+        function helper(node) {
+            if (node.left) {
+                helper(node.left);
+            }
+
+            visitedVals.push(node.value);
+
+            if (node.right) helper(node.right);
+
+        }
+
+        if (!this.root) return null;
+
+        let visitedVals = [];
+        let current = this.root;
+        helper(current);
+        return visitedVals;
+    }
+
+    postOrder2() {
+        function helper(node) {
+            if (node.left) {
+                helper(node.left);
+            }
+
+            if (node.right) helper(node.right);
+            visitedVals.push(node.value);
+        }
+
+        if (!this.root) return null;
+
+        let visitedVals = [];
+        let current = this.root;
+        helper(current);
+        return visitedVals;
+    }
+
+    bfs2() {
+        if (!this.root) return null;
+        let q = [this.root];
+        let visited = [];
+
+        while (q.length) {
+            let removed = q.shift();
+            visited.push(removed.value);
+            if (removed.left) q.push(removed.left);
+            if (removed.right) q.push(removed.right);
+        }
+
+        return visited;
+    }
 }
 
 let bst = new BST();
-bst.insert(10);
+bst.insert(7);
+bst.insert(5);
+bst.insert(9);
+bst.insert(4);
 bst.insert(6);
-bst.insert(3);
 bst.insert(8);
-bst.insert(15);
-bst.insert(20);
-console.log(bst.inOrder());
+bst.insert(10);
+console.log(bst);

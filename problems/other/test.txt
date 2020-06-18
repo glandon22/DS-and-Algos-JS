@@ -1,0 +1,60 @@
+{
+    "root": {
+        "value": "c",
+        "weight": null,
+        "subNodes": [
+            {
+                "value": "o",
+                "weight": null,
+                "subNodes": [
+                    {
+                        "value": "u",
+                        "weight": null,
+                        "subNodes": [
+                            {
+                                "value": "c",
+                                "weight": null,
+                                "subNodes": [
+                                    {
+                                        "value": "h",
+                                        "weight": 100,
+                                        "subNodes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "r",
+                                "weight": null,
+                                "subNodes": [
+                                    {
+                                        "value": "t",
+                                        "weight": 102,
+                                        "subNodes": [
+                                            {
+                                                "value": "s",
+                                                "weight": 103,
+                                                "subNodes": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "value": "a",
+                "weight": null,
+                "subNodes": [
+                    {
+                        "value": "r",
+                        "weight": 101,
+                        "subNodes": []
+                    }
+                ]
+            }
+        ]
+    }
+}
+[ 'couch', 'couchrt', 'couchrts', 'couchrtsar' ]

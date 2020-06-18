@@ -1,0 +1,22 @@
+{
+  "name": "ds-and-algos-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glandon22/DS-and-Algos-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glandon22/DS-and-Algos-JS/issues"
+  },
+  "homepage": "https://github.com/glandon22/DS-and-Algos-JS#readme",
+  "dependencies": {
+    "util": "^0.12.3"
+  }
+}
